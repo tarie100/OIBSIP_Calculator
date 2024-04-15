@@ -8,10 +8,12 @@
     <link rel="stylesheet" type="text/css" href="styles.css">
 </head>
 <body>
-    <div class="text-center calculator">
-        <input type="text" id="display" readonly>
-        <button onclick="appendToDisplay('0')">0</button>
-        <button onclick="appendToDisplay('1')">1</button>
+    <div class="container">
+    <div class="d-grid calculator">
+        <div>
+        <input type="text" class="text-center" id="display" readonly></div>
+        <div class="text-center" id="grid"><button onclick="appendToDisplay('0')">0</button>
+        <button type onclick="appendToDisplay('1')">1</button>
         <button onclick="appendToDisplay('2')">2</button>
         <button onclick="appendToDisplay('3')">3</button>
         <button onclick="appendToDisplay('4')">4</button>
@@ -23,11 +25,13 @@
         <button onclick="appendToDisplay('+')">+</button>
         <button onclick="appendToDisplay('-')">-</button>
         <button onclick="appendToDisplay('/')">/</button>
-        <button onclick="appendToDisplay('*')">x</button>
+        <button onclick="appendToDisplay('*')">X</button>
         <button onclick="calculate()">=</button>
         <button onclick="clearDisplay()">C</button>
+        <button id="clear" onclick="clearInput()">x</button>
+        </div>
       </div>
-      
+    </div>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <script src="index.js"></script>  
 </body>

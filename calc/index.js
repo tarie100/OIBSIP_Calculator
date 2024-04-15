@@ -11,3 +11,11 @@ function appendToDisplay(value) {
   function clearDisplay() {
     document.getElementById("display").value = "";
   }
+  function clearInput(){
+    let displayValue = document.getElementById("display").value;
+    if (displayValue.length > 0){
+      document.getElementById("display").value = displayValue.slice(0, -1);
+
+    }
+  }
+    
